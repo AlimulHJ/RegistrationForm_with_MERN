@@ -1,0 +1,132 @@
+
+npm init -y => initializing npm package
+    // npm init -y. will simply generate an empty npm project without going through an interactive process.
+    // The -y stands for yes
+    // this cmd will create a "package.json" file
+
+npm i express  => installing node package express
+    // this cmd will add node_modules(folder), package-lock.json(file)
+    // add express to the dependencies
+
+npm i mongoose  => installing node package mongoose
+    // add mongoose to the dependencies
+
+npm i hbs  => installing node package handle bar
+    // add hbs to the dependencies
+
+mkdir src
+cd src
+mkdir db
+mkdir models
+type nul > app.js
+    // make src -> go to src -> make db -> make models -> make app.js file 
+
+
+cmd: cd .. => go to main dir(RegistrationForm_with_MERN)
+cmd: node src/app.js  => run the file- app.js
+
+cmd: npm i nodemon
+  // install nodemon package. which will run the app.js file whenver it detects a change
+  // So, no need to run the file continiously. Like live server in editor
+
+  add script to package.json file -> "dev": "nodemon src/app.js"
+cmd: npm run dev
+
+  create conn.js file in db-folder
+  connect database with epress app by modifying the conn.js file
+  connect conn.js file to the app.js file
+
+  create a folder- public in root dir(Registra....) & create index.html
+  
+
+  # add these code to app.js to connect index.html:
+  const path = require("path");
+  const static_path = path.join(__dirname, "../public");
+  // console.log(path.join(__dirname, "../public"))
+  app.use(express.static(static_path));
+
+
+  # make views folder in root dir -> create index.hbs
+  # connect it in the app.js file
+	// app.set("view engine","hbs");
+
+  # make folder name- templates
+  # make two folder in templates named- views & partials
+  # add partials files in index.hbs -> {{>file_name}} -> e.g: {{>navbar}}
+
+
+add these code to app.js:
+const template_path = path.join(__dirname, "../templates/views");
+app.set("views",template_path);
+const hbs = require("hbs");
+
+const partials_path = path.join(__dirname, "../templates/partials");
+hbs.registerPartials(partials_path);
+
+  # To run on save all files: "dev": "nodemon src/app.js -e js,hbs"
+	// add this extension
+
+
+
+## Nodejs authentication- jwt::
+
+cosnt jwt = require("jsonwebtoken");
+const createToken = async() =>{
+  const token = await jwt.sign({_id: 6071b5f9c3d865149073742a}, "32_Char_Long_String", {
+    expiresIn: "2 minutes"
+  });
+  console.log(token);
+  const userVer = await jwt.verify(token, "32_Char_Long_String");
+  console.log(userVer);
+}
+createToken();
+
+----end of jwt----
+
+
+cmd:
+  git status
+  git init
+  type nul > .gitignore
+    // create .gitignore file
+  git add .
+  git commit -m "my first mern project"
+  git remote add origin  <REMOTE_URL>
+    // REMOTE_URL=> https://github.com/AlimulHJ/RegistrationForm_with_MERN
+    // git remote add origin https://github.com/AlimulHJ/RegistrationForm_with_MERN
+
+  git branch    // shows * master
+  git push -u origin master
+    // sets the origin to (https://github.com/AlimulHJ/RegistrationForm_with_MERN
+
+------x------
+Cookie::
+res.cookie()  -> this function is used to set cookie name to value, 
+                 value parameter may be a String or object converted to json
+
+res.cookie(name, value, [options]);
+or:
+res.cookie("jwt", token, {
+  expires: new Date(date.now() + 10000),  // add expire timee in ms
+  httpOnly: true  // client cann't change the jwt cookie
+});
+
+
+
+------x------
+## Run command: npm run dev
+
+------x------
+## bcryptjs -> for hashing 
+## jsonwebtoken -> token generator for authentication
+## dotenv -> to hide/secret var values
+## cookie-parser
+
+------x------
+Play-> 47
+
+https://www.youtube.com/watch?v=whHpTvtMcss&list=PLwGdqUZWnOp1P9xSsJg7g3AY0CUjs-WOa&index=46
+
+
+navbar part- after a tag->
+{{!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle-navbar-navigation"><span class="navbar-toggler-icon"></span></button> --}}
