@@ -1,3 +1,8 @@
+node src/app.js -> to start the server
+or
+npm run dev
+
+------x------x------
 
 npm init -y => initializing npm package
     // npm init -y. will simply generate an empty npm project without going through an interactive process.
@@ -111,20 +116,17 @@ res.cookie("jwt", token, {
   httpOnly: true  // client cann't change the jwt cookie
 });
 
-
-
 ------x------
-## Run command: npm run dev
 
-------x------
 ## bcryptjs -> for hashing 
 ## jsonwebtoken -> token generator for authentication
 ## dotenv -> to hide/secret var values
 ## cookie-parser
 
 ------x------
+## Run command: npm run dev
+------x------
 Play-> 47
-
 https://www.youtube.com/watch?v=whHpTvtMcss&list=PLwGdqUZWnOp1P9xSsJg7g3AY0CUjs-WOa&index=46
 
 
