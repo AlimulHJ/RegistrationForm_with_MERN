@@ -127,7 +127,7 @@ res.cookie("jwt", token, {
 ## Run command: npm run dev
 ------x------
 Play-> 47
-https://www.youtube.com/watch?v=whHpTvtMcss&list=PLwGdqUZWnOp1P9xSsJg7g3AY0CUjs-WOa&index=46
+https://www.youtube.com/watch?v=XZiFBlfluZk&list=PLwGdqUZWnOp1P9xSsJg7g3AY0CUjs-WOa&index=32
 
 
 navbar part- after a tag->

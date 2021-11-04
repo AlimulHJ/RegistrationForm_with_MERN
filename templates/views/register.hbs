@@ -7,18 +7,17 @@
   
 
 </head>
-<body>
+<body class="register-body">
   {{>navbar}}
-
   
 
   <div class="container register mb-5">
     <div class="row">
       <div class="col-md-3 register-left">
         <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="image">
-        <h3>Welcome</h3>
-        <p>to the complete MERN Backend course.</p>
-        <input type="submit" name="" value="Login"> <br/>
+        <h2>Welcome</h2>
+        <p>to the complete <strong>MERN</strong> Backend course.</p>
+        {{!-- <input type="submit" name="" value="Login" class="btn btn-info"> <br/> --}}
       </div>
 
       <div class="col-md-9 register-right">
@@ -33,7 +32,7 @@
 
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <h3 class="register-heading">Employee Registration Form</h3>
+            <h5 class="register-heading">Employee Registration Form</h5>
             <form action="/register" method="POST">
               <div class="row register-form">
                 <div class="col-md-6">
@@ -61,8 +60,8 @@
                   </div>
 
                   <div class="form-group">
-                    <div class="maxl">
-                      <label for="" class="radio inline">
+                    <div class="maxl d-flex justify-content-center">
+                      <label for="" class="radio inline radOpt1">
                         <input type="radio" name="gender" value="male" checked>
                         <span>Male</span>
                       </label>
@@ -81,7 +80,7 @@
                     <input type="password" class="form-control" placeholder="Confirm Password *" value="" name="confirmpassword">
                   </div>
 
-                  <input type="submit" class="btnRegister" value="Register">
+                  <input type="submit" class="btnRegister btn btn-info" value="Register">
                 </div>
               </div>
 
@@ -116,7 +115,7 @@
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="`Answer *`" value="">
                 </div>
-                <input type="submit" class="btnRegister" value="Register">
+                <input type="submit" class="btnRegister btn btn-info" value="Login">
               </div>
             </div>
           </div>

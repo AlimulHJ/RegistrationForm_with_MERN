@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+:root{
+  --backgnd-color: #A9D5DE;
+}
+
 .navbar{
   background-image: url('/images/nav_bar_img.jpg');
   background-size: 100% 100%;
@@ -11,14 +15,18 @@
   height: 11vh;
   width: 100%;
 }
-
+.navbar a{
+  color: #272640;
+}
 .navbar-brand{
   font-size: 8vh;
   font-weight: 700;
 }
 
 #navbarSupportContent li{
-  padding: 0 10px;
+  padding: 0 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 #navbarSupportContent ul{
@@ -27,7 +35,7 @@
 }
 
 .welcomeMsg{
-  /* height: 5vh; */
+  /* color: chartreuse; */
 }
 
 /* ---------x--------- */
@@ -52,4 +60,27 @@
 #team-section{
   margin-bottom: 3vh;
 }
+/* ---------x--------- */
+
+.register-body{
+  background-color: var(--backgnd-color);
+  margin-top: 20vh;
+}
+.register input{
+  margin-bottom: 0.5vh;
+}
+.register-heading{
+  margin: 2vh 0;
+}
+.register .maxl{
+  margin: 1.5vh 0;
+}
+.radOpt1{
+  margin-right: 2vw;
+}
+.register input[type=submit]{
+  margin: 2vh 0;
+}
+
+/* ---------x--------- */
 /* ---------x--------- */
