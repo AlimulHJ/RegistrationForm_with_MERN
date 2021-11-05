@@ -4,27 +4,34 @@
 }
 
 :root{
-  --backgnd-color: #A9D5DE;
+  --backgnd-color: #dce6f5;
 }
 
 .navbar{
   background-image: url('/images/nav_bar_img.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   height: 11vh;
   width: 100%;
+  padding: 0 2vw;
+  margin: 0 auto;
+  overflow: hidden;
 }
 .navbar a{
   color: #272640;
 }
 .navbar-brand{
-  font-size: 8vh;
+  font-size: 7vh;
   font-weight: 700;
 }
 
+#navbarSupportContent{
+  padding: 0 2vw;
+}
+
 #navbarSupportContent li{
-  padding: 0 6px;
+  padding: 0.3vw;
   font-size: 1.1rem;
   font-weight: 600;
 }
@@ -48,7 +55,7 @@
 }
 
 .home-content{
-  
+  /* height: 120vh; */
 }
 
 #about-section{
@@ -66,6 +73,15 @@
   background-color: var(--backgnd-color);
   margin-top: 20vh;
 }
+.register-right{
+  background-image: linear-gradient(#bfc9da, #DCE6F5);
+  padding: 1rem;
+  border: 0.1vh solid #8ECAE6;
+      border-top-right-radius: 7px;
+      border-top-left-radius: 7px;
+      border-bottom-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+}
 .register input{
   margin-bottom: 0.5vh;
 }
@@ -80,7 +96,32 @@
 }
 .register input[type=submit]{
   margin: 2vh 0;
+  background-color: #42A5F5;
 }
 
 /* ---------x--------- */
+.login-body{
+  background-color: var(--backgnd-color);
+  margin-top: 20vh;
+}
+.login-body input{
+  margin-bottom: 0.5vh;
+}
+/* .login-body .img-wrapper{
+  margin: 0 auto;
+} */
+.login-image{
+  padding-top: 0;
+  padding-bottom: 2vh;
+  height: 15vh;
+}
+.loginTotalDiv{
+  background-image: linear-gradient(#bfc9da, #DCE6F5);
+  padding: 1rem;
+  border: 0.1vh solid #8ECAE6;
+      border-top-right-radius: 7px;
+      border-top-left-radius: 7px;
+      border-bottom-right-radius: 80px;
+      border-bottom-left-radius: 80px;
+}
 /* ---------x--------- */

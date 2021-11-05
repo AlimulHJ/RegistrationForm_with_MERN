@@ -3,24 +3,27 @@
 <head>
   
   {{>header}}
-  <title>Login</title>
+  <title>Login Page</title>
+
 </head>
-<body>
+<body class="login-body">
   {{>navbar}}
   
   <div class="container">
     <div class="row my-5">
-      <div class="col-sm-6 col-md-4 mx-auto">
-        <h2 class="text-center login-title my-5">Employee Login Form</h2>
+      <div class="col-sm-6 col-md-4 mx-auto text-center loginTotalDiv">
+        <h4 class="text-center login-title my-5">Login Form</h4>
         <div class="account-wall">
-          <img src="https://lh5.googleusercontent.com/-b0-K99FXlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120" alt="image">
-          <form action="/login" class="form-signin" method="POST">
+          <div class="img-wrapper text-center">
+            <img src="/images/login-image.png" class="login-image" alt="image">
+          </div>
+          <form action="/login" class="form-signin text-center" method="POST">
             <input type="email" class="form-control" placeholder="Email" required name="email">
             <input type="password" class="form-control" placeholder="Password" required name="password">
             <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
             <label for="" class="checkbox pull-left mt-3">
               <input type="checkbox" value="remember-me">Remember me
-            </label>
+            </label>  <br /><br />
             <a href="#" class="pull-right need-help">Need help</a>
             <span class="clearfix"></span>
           </form>
