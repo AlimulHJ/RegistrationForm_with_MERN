@@ -4,7 +4,7 @@
   <title>MERN- Login/Reg</title>
   {{>header}}
 </head>
-<body class="vh-120 index-body">
+<body class="index-body">
   {{>navbar}}
 
   <div class="home-content">
@@ -12,9 +12,9 @@
     <div class="welcomeMsg text-dark">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 d-flex">
-            <div class="te text-center ">
-              <h1>Welcome to the MERN Backend Project</h1>
+          <div class="col-md-12 d-flex">
+            <div class="w-100 justify-content-center">
+              <h2>Welcome to the MERN Backend Project</h2>
               <p>One of the best project on MERN Stack.</p>
             </div>
           </div>
@@ -22,30 +22,30 @@
       </div>
     </div>
 
-    <section id="about-section">
+    <section id="recent-section">
       <div class="container">
         <div class="row">
 
-          <div class="col-md-4 d-flex justify-content-center">
-            <div class="about-text border-right">
-              <h3>Header1- About</h3>
-              <p>This is a paragraph</p>
+          <div class="col-md-4 d-flex">
+            <div class="about-text border-right text-center">
+              <h4 class="text-center">Recent-1</h4>
+              <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               <button class="btn btn-primary">More</button>
             </div>
           </div>
 
           <div class="col-md-4 d-flex justify-content-center">
-            <div class="about-text border-right">
-              <h3>Header2- About</h3>
-              <p>Just a paragraph</p>
+            <div class="about-text border-right text-center">
+              <h4 class="text-center">Recent-2</h4>
+              <p class="text-center">It is a long established fact that a reader will be distracted by the readable content.</p>
               <button class="btn btn-primary">More</button>
             </div>
           </div>
 
           <div class="col-md-4 d-flex justify-content-center">
-            <div class="about-text border-right">
-              <h3>Header3- About</h3>
-              <p>This is a paragraph</p>
+            <div class="about-text border-right text-center">
+              <h4 class="text-center">Recent-3</h4>
+              <p class="text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
               <button class="btn btn-primary">More</button>
             </div>
           </div>
@@ -54,6 +54,7 @@
       </div>
     </section>
 
+    <hr class="team-hr"/>
 
     <section id="team-section">
       <div class="container">
@@ -61,8 +62,8 @@
           <div class="col-md-12">
 
             <div class="team-top-header text-center">
-              <h3>Team Member</h3>
-              <p>This is a paragraph</p>
+              <h4>Team Member</h4>
+              <p>Founder</p>
             </div>
 
             <div class="container">
@@ -71,7 +72,7 @@
                 <div class="col-md-4 d-flex justify-content-center">
                   <div class="team-member-id text-center">
                     <img src="" alt="" class="img-fluid rounder-circle">
-                    <h3>Team Member1</h3>
+                    <h4>Member1</h4>
                     <p>Co-founder</p>
                   </div>
                 </div>
@@ -79,7 +80,7 @@
                 <div class="col-md-4 d-flex justify-content-center">
                   <div class="team-member-id text-center">
                     <img src="" alt="" class="img-fluid rounder-circle">
-                    <h3>Team Member2</h3>
+                    <h4>Member2</h4>
                     <p>Co-founder</p>
                   </div>
                 </div>
@@ -87,7 +88,7 @@
                 <div class="col-md-4 d-flex justify-content-center">
                   <div class="team-member-id text-center">
                     <img src="" alt="" class="img-fluid rounder-circle">
-                    <h3>Team Member3</h3>
+                    <h4>Member3</h4>
                     <p>Co-founder</p>
                   </div>
                 </div>
@@ -101,31 +102,32 @@
       </div>
     </section>
 
+  <hr class="team-hr"/>
 
-    <section id="recent-section">
+    <section id="about-section">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
 
             <div class="team-top-header text-center">
-              <h3>Recent</h3>
-              <p>This is a paragraph</p>
+              <h4>About</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
             </div>
 
             <div class="row">
               <div class="col-md-6 d-flex justify-content-center">
-                <div class="recent-text">
+                <div class="about-text text-center">
                   <img src="" alt="" class="img-fluid">
-                  <h3>Headner1</h3>
+                  <h4>About1</h4>
                   <p>This is a paragraph</p>
                   <button class="btn btn-primary">More</button>
                 </div>
               </div>
 
               <div class="col-md-6 d-flex justify-content-center">
-                <div class="recent-text">
+                <div class="about-text text-center">
                   <img src="" alt="" class="img-fluid">
-                  <h3>Headner2</h3>
+                  <h4>About2</h4>
                   <p>This is a paragraph</p>
                   <button class="btn btn-primary">More</button>
                 </div>
@@ -136,7 +138,8 @@
         </div>
       </div>
     </section>
-    </div>  {{!-- end of home-content --}}
+    
+  </div>  {{!-- end of home-content --}}
 
 </body>
 </html>

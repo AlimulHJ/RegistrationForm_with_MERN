@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  font-family:  Arial, Helvetica, sans-serif;
 }
 
 :root{
@@ -11,61 +12,77 @@
   background-image: url('/images/nav_bar_img.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: center;
-  height: 11vh;
+  height: 8vh;
   width: 100%;
-  padding: 0 2vw;
-  margin: 0 auto;
-  overflow: hidden;
+  padding: 0 5vw;
 }
 .navbar a{
   color: #272640;
 }
 .navbar-brand{
-  font-size: 7vh;
+  font-size: 6vh;
   font-weight: 700;
+  font-family:Verdana;
 }
 
 #navbarSupportContent{
   padding: 0 2vw;
 }
-
 #navbarSupportContent li{
   padding: 0.3vw;
   font-size: 1.1rem;
   font-weight: 600;
 }
-
 #navbarSupportContent ul{
   margin-left:auto;
   margin-right:0;
 }
 
 .welcomeMsg{
-  /* color: chartreuse; */
+  text-align: center;
+  margin-bottom: 3vh;
 }
-
+.welcomeMsg h2,p{
+  font-family: Georgia, serif;
+}
 /* ---------x--------- */
 .index-body{
-  background: linear-gradient(217deg, rgba(121, 223, 192, 0.8), rgba(0, 132, 255, 0) 70.71%),
-            linear-gradient(127deg, rgba(21, 200, 212, 0.8), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  background-image: linear-gradient(#bfc9da, #DCE6F5);
   background-repeat: no-repeat;
-  height: 100vh;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 0 5vw;
+  padding-bottom: 5vh;
 }
 
 .home-content{
-  /* height: 120vh; */
+  padding-top: 11vh;
+}
+.home-content p{
+  /* font-size: 1.1rem; */
+  font-family: "Times New Roman", Times, serif;
 }
 
-#about-section{
-  font-size: 1.5rem;
+#recent-section{
+  /* font-size: 1.2rem; */
   margin-bottom: 3vh;
-  
 }
 
 #team-section{
-  margin-bottom: 3vh;
+  padding: 3vh;
+}
+
+#about-section{
+  
+}
+
+.team-hr{
+  width: 55%;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 2px dashed rgb(106, 91, 126);
+  margin-bottom: 2vh;
+  margin-top: 2vh;
 }
 /* ---------x--------- */
 
